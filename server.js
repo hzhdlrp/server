@@ -2,7 +2,6 @@ const express = require('express');
 const fs = require('fs');
 const cors = require('cors');
 const app = express();
-const port = 3000; // Или 3001, если вы меняли порт
 
 app.use(cors()); // Добавляем middleware для CORS
 app.use(express.json()); // Добавляем поддержку JSON для тела запроса
@@ -54,5 +53,5 @@ app.post('/data', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
+    console.log(`Server is running `);
 });
